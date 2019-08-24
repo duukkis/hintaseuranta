@@ -26,6 +26,16 @@ $urls = array(
     "desc" => array("elem" => "", "data" => ""),
     "picture" => array("elem" => "img.ProductListImage", "data" => "src"),
   ),
+  array(
+    "store" => "Clas Ohlson",
+    "url" => "https://www.clasohlson.com/fi/view/content/search?categoryId=0&searchKey=All&search_prefix=".$q."&mode=mode+matchpartial&showTabs=false",
+    "appendToUrl" => "",
+    "name" => array("elem" => "span[itemprop=name] a", "data" => "innertext"),
+    "itemlink" => array("elem" => "span[itemprop=name] a", "data" => "href"),
+    "price" => array("elem" => "a.salePrice", "data" => "innertext"),
+    "desc" => array("elem" => "span[itemprop=description]", "data" => "innertext"),
+    "picture" => array("elem" => "img.lazy", "data" => "src"),
+  ),
 );
 
 
